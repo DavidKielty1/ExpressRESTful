@@ -1,3 +1,4 @@
+const { text } = require("express");
 const express = require("express");
 const app = express();
 
@@ -16,3 +17,9 @@ app.post("/tacos", (req, res) => {
 app.listen(3000, () => {
   console.log("Listening 3000");
 });
+
+GET /comments -list all comments 
+POST /comments - create a new comment 
+GET /comments/:id - get particular comment using ID 
+PATCH  /comments/:id - update one comment 
+DELETE /comments/:id - destrony one comment
